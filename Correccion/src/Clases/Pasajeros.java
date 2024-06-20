@@ -10,7 +10,8 @@ public class Pasajeros extends Ticket{
     public Pasajeros() {
     }
 
-    public Pasajeros(String nombre, int edad, String genero, int numero, String correo) {
+    public Pasajeros(double pasajeros, String nombre, int edad, String genero, int numero, String correo) {
+        super(pasajeros);
         this.nombre = nombre;
         this.edad = edad;
         this.genero = genero;
@@ -58,7 +59,6 @@ public class Pasajeros extends Ticket{
         this.correo = correo;
     }
 
-    @Override
     public void mostrar(){
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);

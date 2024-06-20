@@ -7,7 +7,8 @@ public class Rutas extends Ticket{
     public Rutas() {
     }
 
-    public Rutas(String nombre) {
+    public Rutas(double pasajeros, String nombre) {
+        super(pasajeros);
         this.nombre = nombre;
     }
 
