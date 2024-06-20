@@ -58,6 +58,7 @@ public class Pasajeros extends Ticket{
         this.correo = correo;
     }
 
+    @Override
     public void mostrar(){
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
