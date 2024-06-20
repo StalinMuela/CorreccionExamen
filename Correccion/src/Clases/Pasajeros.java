@@ -1,5 +1,5 @@
 package Clases;
-
+import java.util.Scanner;
 public class Pasajeros extends Ticket{
     String nombre;
     int edad;
@@ -58,6 +58,23 @@ public class Pasajeros extends Ticket{
     public void setCorreo(String correo) {
         this.correo = correo;
     }
+
+    public void escribir(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingresa el nombre: ");
+        this.setNombre(sc.nextLine());
+        System.out.println("Ingresa el edad: ");
+        this.setEdad(sc.nextInt());
+        sc.nextLine();
+        System.out.println("Ingresa el genero: ");
+        this.setGenero(sc.nextLine());
+        System.out.println("Ingresa el numero: ");
+        this.setNumero(sc.nextInt());
+        sc.nextLine();
+        System.out.println("Ingresa el correo: ");
+        this.setCorreo(sc.nextLine());
+    }
+
 
     public void mostrar(){
         System.out.println("Nombre: " + nombre);
