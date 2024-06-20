@@ -7,8 +7,8 @@ public class Rutas extends Ticket{
     public Rutas() {
     }
 
-    public Rutas(double pasajeros, String nombre) {
-        super(pasajeros);
+    public Rutas(double pasajeros, double precio, String nombre) {
+        super(pasajeros, precio);
         this.nombre = nombre;
     }
 
@@ -30,7 +30,6 @@ public class Rutas extends Ticket{
         System.out.println("Ingresa la ruta a viajar: ");
         nombre = sc.nextLine();
 
-        Double precio = 0.0;
         switch (nombre){
             case "Guayaquil":
                 precio = 20.0;

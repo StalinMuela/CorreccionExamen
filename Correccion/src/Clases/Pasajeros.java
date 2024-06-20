@@ -10,8 +10,8 @@ public class Pasajeros extends Ticket{
     public Pasajeros() {
     }
 
-    public Pasajeros(double pasajeros, String nombre, int edad, String genero, int numero, String correo) {
-        super(pasajeros);
+    public Pasajeros(double pasajeros, double precio, String nombre, int edad, String genero, int numero, String correo) {
+        super(pasajeros, precio);
         this.nombre = nombre;
         this.edad = edad;
         this.genero = genero;

@@ -2,13 +2,15 @@ package Clases;
 
 public class Ticket {
     double pasajeros;
+    double precio;
 
 
     public Ticket() {
     }
 
-    public Ticket(double pasajeros) {
+    public Ticket(double pasajeros, double precio) {
         this.pasajeros = pasajeros;
+        this.precio = precio;
     }
 
     public double getPasajeros() {
